@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Produto} from '../model/produto';
-import { ProdutoService } from '../services/produto-service';
+//import { ProdutoService } from '../services/produto-service';
 import { AlertController } from '@ionic/angular';
 
 @Component({
@@ -15,7 +15,7 @@ export class Tab3Page {
     //private: userService:UserService
   ) { }
  produto = new Produto()
- produtoService = new ProdutoService();
+ //produtoService = new ProdutoService();
 
   async presentAlert(tipo: string, texto: string) {
     const alert = await this.alertController.create({
@@ -31,7 +31,7 @@ export class Tab3Page {
 
 
   Save() {
-    this.produtoService.add(this.produto);
+    //this.produtoService.add(this.produto);
     this.presentAlert("aviso", "cadrasto");
     //console.log(this.user);
 

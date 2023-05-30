@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { UserService } from '../services/user-service';
+import { UserService } from '../services/user.service';
 import { User } from '../model/user';
 
 @Component({
