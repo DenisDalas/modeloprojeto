@@ -18,6 +18,18 @@ const routes: Routes = [
   {
     path: 'user-list',
     loadChildren: () => import('./pages/user-list/user-list.module').then( m => m.UserListPageModule)
+  },
+  {
+    path: 'produtosform',
+    loadChildren: () => import('./pages/produtosform/produtosform.module').then( m => m.ProdutosformPageModule)
+  },
+  {
+    path: 'produto-senter',
+    loadChildren: () => import('./pages/produto-senter/produto-senter.module').then( m => m.ProdutoSenterPageModule)
+  },
+  {
+    path: 'produtos-list',
+    loadChildren: () => import('./pages/produtos-list/produtos-list.module').then( m => m.ProdutosListPageModule)
   }
 ];
 @NgModule({
